@@ -116,7 +116,7 @@
 
 @layer components {
   .container {
-    inline-size: min(100% - 2.5rem, var(--max-inline-container));
+    inline-size: min(100% - 2 * var(--gutter, 1.5rem), var(--max-inline-container));
     margin-inline: auto;
   }
 
@@ -170,8 +170,8 @@
   .brand-mark {
     inline-size: 2rem;
     block-size: 2rem;
-    border-radius: 0.5rem;
-    background-color: var(--color-brand-primary);
+    border-radius: var(--radius-default);
+    background-color: var(--color-brand-primary-bright, var(--color-brand-primary));
     color: var(--color-text-on-brand);
     display: inline-grid;
     place-content: center;
@@ -187,9 +187,9 @@
   }
 
   .nav-link {
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 0.95rem;
     padding-block: 0.25rem;
   }
@@ -203,21 +203,23 @@
   .badge {
     display: inline-flex;
     align-items: safe center;
-    gap: 0.5rem;
-    padding-block: 0.3rem;
-    padding-inline: 0.85rem;
+    gap: var(--space-xs);
+    padding-block: 0.25rem;
+    padding-inline: 0.75rem;
     border-radius: var(--radius-pill);
-    font-size: 0.825rem;
-    font-weight: 650;
+    font-size: var(--font-size-label-sm);
+    font-weight: 600;
+    line-height: var(--line-height-label-sm);
     background-color: var(--color-brand-soft);
-    color: var(--color-brand-primary);
+    color: var(--color-brand-text);
     border: 1px solid var(--color-brand-border);
   }
 
   .badge-amber {
     background-color: var(--color-accent-bg);
     color: var(--color-accent-text);
-    border-color: transparent;
+    border: 1px solid var(--color-accent-border);
+    font-weight: 650;
   }
 
   .status-dot {
@@ -239,12 +241,12 @@
     display: inline-flex;
     align-items: safe center;
     justify-content: center;
-    gap: 0.5rem;
-    padding-block: 0.75rem;
-    padding-inline: 1.35rem;
-    border-radius: var(--radius-md);
-    font-weight: 650;
-    font-size: 0.975rem;
+    gap: var(--space-xs);
+    padding-block: 0.65rem;
+    padding-inline: 1.25rem;
+    border-radius: var(--radius-default);
+    font-weight: 600;
+    font-size: var(--font-size-body-md);
     text-decoration: none;
     border: 1px solid transparent;
     transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;

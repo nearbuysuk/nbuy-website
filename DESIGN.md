@@ -1,53 +1,23 @@
 ---
 name: Fidelity Modern
+seed: '#ff00dd'
 colors:
-  surface: '#fff7fb'
-  surface-dim: '#ebd2ed'
-  surface-bright: '#fff7fb'
-  surface-container-lowest: '#ffffff'
-  surface-container-low: '#ffeffe'
-  surface-container: '#fee7ff'
-  surface-container-high: '#f9e0fb'
-  surface-container-highest: '#f4dbf5'
-  on-surface: '#251629'
-  on-surface-variant: '#5a3f4a'
-  inverse-surface: '#3b2b3f'
-  inverse-on-surface: '#ffebff'
-  outline: '#8d6f7a'
-  outline-variant: '#e1bdca'
-  surface-tint: '#b60074'
-  primary: '#b20072'
-  on-primary: '#ffffff'
-  primary-container: '#de008f'
-  on-primary-container: '#fffbff'
-  inverse-primary: '#ffafd1'
-  secondary: '#476800'
-  on-secondary: '#ffffff'
-  secondary-container: '#c1f36e'
-  on-secondary-container: '#4b6f00'
-  tertiary: '#006579'
-  on-tertiary: '#ffffff'
-  tertiary-container: '#137f97'
-  on-tertiary-container: '#f9fdff'
-  error: '#ba1a1a'
-  on-error: '#ffffff'
-  error-container: '#ffdad6'
-  on-error-container: '#93000a'
-  primary-fixed: '#ffd8e6'
-  primary-fixed-dim: '#ffafd1'
-  on-primary-fixed: '#3d0024'
-  on-primary-fixed-variant: '#8b0058'
-  secondary-fixed: '#c1f36e'
-  secondary-fixed-dim: '#a6d655'
-  on-secondary-fixed: '#121f00'
-  on-secondary-fixed-variant: '#344e00'
-  tertiary-fixed: '#b1ebff'
-  tertiary-fixed-dim: '#7bd3ed'
-  on-tertiary-fixed: '#001f27'
-  on-tertiary-fixed-variant: '#004e5e'
-  background: '#fff7fb'
-  on-background: '#251629'
-  surface-variant: '#f4dbf5'
+  primary: '#ff00dd'
+  primary-hover: '#c700ad'
+  primary-soft: '#fdf2fa'
+  primary-border: '#f8c9ee'
+  primary-text: '#9e0089'
+  surface: '#ffffff'
+  surface-subtle: '#f8f8fa'
+  surface-muted: '#eeeeee'
+  border-subtle: '#eeeeee'
+  border-strong: '#d4d4d8'
+  text-primary: '#18181b'
+  text-secondary: '#52525b'
+  text-muted: '#71717a'
+  accent: '#f2fce2'
+  accent-text: '#234500'
+  accent-border: '#d4f49c'
 typography:
   headline-lg:
     fontFamily: Inter
@@ -84,14 +54,15 @@ spacing:
 # Design System
 
 ## Brand & Style
-The design system adopts a **Corporate / Modern** style fused with high-fidelity principles, using **Inter** as the universal typeface. The aesthetic is clean, professional, and reliable, utilizing vibrant magenta, lime green, and cyan accents to project modern energy while maintaining a grounded, accessible foundation.
+The design system adopts a **Corporate / Modern** style fused with high-fidelity principles, using **Inter** as the universal typeface. The aesthetic is clean, professional, and reliable, utilizing bright vibrant magenta accents paired with balanced, clean neutral grey surfaces to maintain a crisp, accessible, and modern foundation.
 
 ## Colors
-The color palette is built for clarity and contrast within a light mode environment:
-- **Primary Color (`#f0069b`)**: A vibrant magenta used for primary actions, key highlights, and focal points.
-- **Secondary Color (`#98c748`)**: A fresh lime-green to support secondary interactive elements and badges.
-- **Tertiary Color (`#007991`)**: A rich cyan providing a clear semantic accent for success states and secondary highlights.
-- **Neutral Color (`#847087`)**: A balanced, cool neutral tone used for structural borders, text, and surface containers.
+The simplified color palette is built for clarity and contrast within a light mode environment:
+- **Seed / Primary Color (`#ff00dd`)**: A bright, vibrant magenta used for primary brand accents, action highlights, and focal points.
+- **Surface Colors**: Light, balanced neutral greys (`#ffffff` canvas, `#f8f8fa` subtle alternating sections, `#eeeeee` muted containers) providing clean structure without color tinting.
+- **Borders**: Balanced grey values (`#eeeeee` subtle, `#d4d4d8` strong) for delicate, neutral framing.
+- **Typography & Foreground**: Deep neutral greys (`#18181b` primary, `#52525b` secondary, `#71717a` muted) ensuring maximum legibility and contrast against light surfaces.
+- **Accent**: Fresh lime-green (`#f2fce2` / `#234500`) for secondary badges and status indicators.
 
 ## Typography
 Typography relies entirely on **Inter** to ensure maximum legibility, clean geometry, and a neutral professional tone across headlines, body copy, and UI labels. Scaling is tightly controlled to maintain readability across mobile and desktop viewports.
@@ -100,10 +71,7 @@ Typography relies entirely on **Inter** to ensure maximum legibility, clean geom
 A balanced fluid grid system is employed, featuring standard 1.5rem gutters and 2rem outer canvas margins. Component padding and element spacing scale proportionally using a standard spacing rhythm designed to keep layouts airy yet structured.
 
 ## Elevation & Depth
-Elevation is primarily communicated through subtle tonal surface-container tiers and delicate, low-contrast neutral outlines. Ambient shadows are kept minimal to preserve a clean, modern aesthetic.
+Elevation is communicated through clean surface-card containers and delicate neutral outlines. Ambient shadows are kept minimal to preserve a modern aesthetic.
 
 ## Shapes
-The shape language uses a moderate **rounded** style (roundedness level 2). UI elements feature a baseline 0.5rem corner radius, with larger containers scaling up to 1rem and 1.5rem (`rounded-lg`, `rounded-xl`), offering a friendly yet professional feel.
-
-## Components
-Components follow the modern Inter typography, rounded corner styles (0.5rem radius), and vibrant primary/tertiary accents. Buttons, chips, input fields, and cards maintain consistent padding corresponding to the defined spacing tokens.
+The shape language uses a moderate **rounded** style (roundedness level 2). UI elements feature a baseline 0.5rem corner radius, with larger containers scaling up to 1rem and 1.5rem (`rounded-lg`, `rounded-xl`).
